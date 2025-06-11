@@ -11,7 +11,7 @@ import numpy as np
 import tensorflow.lite as tflite
 
 # Config
-MODEL_PATH = 'animal_classifier_quant.tflite'
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'animal_classifier_quant.tflite')
 UPLOAD_FOLDER = 'images'
 LOG_FILENAME = 'images_log.json'
 
